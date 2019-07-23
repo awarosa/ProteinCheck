@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+
+
+        android:orientation="horizontal">
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/blue_green"
+
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbhome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:checked="true"
+                android:drawableTop="@drawable/is_home"
+                android:gravity="center"
+
+                android:background="@drawable/is_lined"
+
+                android:text="首页"
+                android:textColor="@drawable/rabtn_a1_selector" />
+
+            <RadioButton
+                android:id="@+id/rbset"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/is_lined"
+                android:button="@null"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:checked="false"
+
+                android:drawableTop="@drawable/is_set"
+                android:gravity="center"
+                android:text="设置"
+                android:textColor="@drawable/rabtn_b1_selector" />
+
+            <RadioButton
+                android:id="@+id/rbcollect"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:background="@drawable/is_lined"
+
+                android:textColor="@drawable/rabtn_b1_selector"
+                android:drawableTop="@drawable/is_collect"
+                android:gravity="center"
+                android:text="凝胶"/>
+
+            <RadioButton
+                android:checked="false"
+                android:id="@+id/rbswim"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:background="@drawable/is_lined"
+
+                android:textColor="@drawable/rabtn_b1_selector"
+                android:drawableTop="@drawable/is_swim"
+                android:gravity="center"
+                android:text="电泳"/>
+
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="17">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <ToggleButton
+                android:layout_weight="4"
+                android:id="@+id/tbtn_sunlit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textColor="@drawable/rabtn_a1_selector"
+                android:textOn="液晶背光"
+                android:textOff="液晶背光"
+                android:drawableTop="@drawable/is_sunlit"/>
+            <TextView
+                android:layout_weight="7"
+                android:id="@+id/tv_rbsen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:text="NOT CONNECTED"/>
+
+
+            <ToggleButton
+                android:layout_weight="4"
+                android:id="@+id/tbtn_lit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+
+                android:textColor="@drawable/rabtn_a1_selector"
+                android:textOn="电泳照明"
+                android:textOff="电泳照明"
+                android:drawableTop="@drawable/is_lit"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

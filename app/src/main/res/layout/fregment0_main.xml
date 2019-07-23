@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="fragment0">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/tv_welcome"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center_horizontal"
+                android:text="欢迎使用"
+                android:textColor="@color/red"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_protein"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center_horizontal"
+                android:text="蛋白滴定测试系统"
+                android:textColor="@color/red"
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="上海交通大学"
+                android:textColor="@color/dark"
+                android:textSize="18dp"
+                android:gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:layout_weight="3">
+
+
+            <Button
+                android:id="@+id/btn_bt_connect"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+
+                android:button = "@null"
+                android:drawableLeft="@drawable/blue_icon"
+                android:drawableRight="@drawable/next5"
+                android:background="@color/white"
+                android:textSize="18dp"
+                android:text="连接蓝牙"
+                style="?android:attr/borderlessButtonStyle"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    android:tag="fragment3">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/dark"
+            android:textSize="20dp"
+            android:text="剩余时间"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="7.3">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"/>
+            <TextView
+                android:id="@+id/tv_swiming_min"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1.4"
+                android:textColor="@color/colorAccent"
+                android:textSize="24dp"
+                android:text="03"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:gravity="bottom"
+
+                android:text="min"
+                android:textColor="@color/green"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="0.3"
+                android:textColor="@color/dark"
+                android:textSize="24dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/tv_swiming_sec"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1.4"
+                android:textColor="@color/colorAccent"
+                android:textSize="24dp"
+                android:text="00"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:gravity="bottom"
+                android:text="s"
+                android:textColor="@color/green"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"/>
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/tbtn_start_or_pause_swim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textOn="暂停"
+            android:textOff="开始"
+            android:textColor="@color/yellor" />
+
+        <TextView
+            android:id="@+id/tv_swim_process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:textColor="#898984"
+            android:text="电泳尚未开始"/>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="int_welcome" >3 </integer>
+    <integer name="int_set" >7 </integer>
+    <integer name="int_collect_plus_ten" >11 </integer>
+    <integer name="int_collect_dec_ten" >13 </integer>
+    <integer name="int_swim_plus_ten" >17 </integer>
+    <integer name="int_swim_dec_ten" >23 </integer>
+    <integer name="int_swim" >27 </integer>
+    <integer name="int_swim_start" >29 </integer>
+    <integer name="int_back_lit" >37 </integer>
+    <integer name="int_swim_ming" >41 </integer>
+    <integer name="int_collect" >53 </integer>
+    <integer name="int_collect_start" >127 </integer>
+    <integer name="int_collect_stop" >129 </integer>
+</resources>

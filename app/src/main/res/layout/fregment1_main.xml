@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="fragment1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="凝胶时长"
+                android:textColor="@color/dark"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="7.3">
+
+                <Button
+                    android:id="@+id/bt_add_collect_sec"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:text="增加"
+                    android:textColor="@color/yellor" />
+
+                <TextView
+                    android:id="@+id/tv_collect_min"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="bottom"
+                    android:text="min"
+                    android:textColor="@color/green"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_double_dot"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/double_dot"
+                    android:textColor="@color/dark"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/tv_collect_sec"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="bottom"
+                    android:text="s"
+                    android:textColor="@color/green"
+                    android:textSize="16dp" />
+                <Button
+                    android:id="@+id/bt_dec_collect_sec"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.4"
+                    android:text="减少"
+                    android:textColor="@color/yellor" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#25f001"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="电泳时长"
+                android:textColor="@color/dark"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="7.3">
+
+                <Button
+                    android:id="@+id/bt_add_swim_sec"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:text="增加"
+                    android:textColor="@color/yellor" />
+
+                <TextView
+                    android:id="@+id/tv_swim_min"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:gravity="center"
+                    android:text="03"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="bottom"
+                    android:text="min"
+                    android:textColor="@color/green"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_double_dot2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/double_dot"
+                    android:textColor="@color/dark"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/tv_swim_sec"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="bottom"
+                    android:text="s"
+                    android:textColor="@color/green"
+                    android:textSize="16dp" />
+                <Button
+                    android:id="@+id/bt_dec_swim_sec"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.4"
+                    android:text="减少"
+                    android:textColor="@color/yellor" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
